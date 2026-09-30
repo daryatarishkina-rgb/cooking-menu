@@ -32,52 +32,9 @@ button.ghost{background:#fff;color:var(--acc);border:1px solid var(--line)}
 button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 14px;font-size:14px;cursor:pointer}
 </style></head><body><main>
 <h1>Неделя 30 сентября – 4 октября</h1>
-<nav><a href="#shop">Покупки</a><a href="#dinners">Ужины</a><a href="#breakfasts">Завтраки</a><a href="#prep">Заготовки</a></nav>
-<h2 id="shop">Список покупок</h2><div class="box shop">
-<div class="row"><button onclick="navigator.clipboard.writeText(document.getElementById('kib').value).then(()=>this.textContent='Скопировано')">Скопировать для Kibsons</button><button class="ghost" onclick="resetChecks()">Снять все галочки</button></div>
-<h3>Kibsons — раз на неделю</h3>
-<textarea id="kib" hidden>Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)
-Молоко — 1 л
-Творог 5 % — 200 г
-Ягоды (голубика или малина) — 1 упаковка
-Сливочное масло — если нет дома
-Рикотта — 250 г (тартин с сардинами)
-Козий сыр мягкий — 100 г
-Яйца — 10 шт.
-Лук репчатый — 3 шт.
-Красный лук — 1 шт.
-Чеснок — 1 головка
-Имбирь свежий — небольшой корень
-Брокколи — 200 г
-Перец болгарский красный — 1 шт.
-Шпинат — 200 г
-Руккола — 1 упаковка
-Кейл — 1 небольшая упаковка
-Спаржа — 1 пучок
-Томаты — 2 шт.
-Черри — 250 г
-Огурцы — 3 шт.
-Авокадо — 2 шт.
-Ананас — ¼ (или маленькая упаковка кусочками)
-Инжир — 3 шт.
-Яблоко — 1 шт.
-Лимоны — 3 шт.
-Петрушка — 1 пучок
-Кокосовое молоко — 1 банка 400 мл
-Красная паста карри — маленькая банка
-Мягкий порошок карри
-Молотый кориандр
-Чечевица консервированная — 1 банка 400 г
-Белая фасоль консервированная — 1 банка
-Рис жасмин — 500 г
-Рис басмати — 500 г
-Каперсы — маленькая банка</textarea><ul class="check"><li><label><input type="checkbox" data-k="kibsons|Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)"><span>Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Молоко — 1 л"><span>Молоко — 1 л</span></label></li><li><label><input type="checkbox" data-k="kibsons|Творог 5 % — 200 г"><span>Творог 5 % — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Ягоды (голубика или малина) — 1 упаковка"><span>Ягоды (голубика или малина) — 1 упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Сливочное масло — если нет дома"><span>Сливочное масло — если нет дома</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рикотта — 250 г (тартин с сардинами)"><span>Рикотта — 250 г (тартин с сардинами)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Козий сыр мягкий — 100 г"><span>Козий сыр мягкий — 100 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Яйца — 10 шт."><span>Яйца — 10 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Лук репчатый — 3 шт."><span>Лук репчатый — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Красный лук — 1 шт."><span>Красный лук — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Чеснок — 1 головка"><span>Чеснок — 1 головка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Имбирь свежий — небольшой корень"><span>Имбирь свежий — небольшой корень</span></label></li><li><label><input type="checkbox" data-k="kibsons|Брокколи — 200 г"><span>Брокколи — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Перец болгарский красный — 1 шт."><span>Перец болгарский красный — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Шпинат — 200 г"><span>Шпинат — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Руккола — 1 упаковка"><span>Руккола — 1 упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Кейл — 1 небольшая упаковка"><span>Кейл — 1 небольшая упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Спаржа — 1 пучок"><span>Спаржа — 1 пучок</span></label></li><li><label><input type="checkbox" data-k="kibsons|Томаты — 2 шт."><span>Томаты — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Черри — 250 г"><span>Черри — 250 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Огурцы — 3 шт."><span>Огурцы — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Авокадо — 2 шт."><span>Авокадо — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Ананас — ¼ (или маленькая упаковка кусочками)"><span>Ананас — ¼ (или маленькая упаковка кусочками)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Инжир — 3 шт."><span>Инжир — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Яблоко — 1 шт."><span>Яблоко — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Лимоны — 3 шт."><span>Лимоны — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Петрушка — 1 пучок"><span>Петрушка — 1 пучок</span></label></li><li><label><input type="checkbox" data-k="kibsons|Кокосовое молоко — 1 банка 400 мл"><span>Кокосовое молоко — 1 банка 400 мл</span></label></li><li><label><input type="checkbox" data-k="kibsons|Красная паста карри — маленькая банка"><span>Красная паста карри — маленькая банка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Мягкий порошок карри"><span>Мягкий порошок карри</span></label></li><li><label><input type="checkbox" data-k="kibsons|Молотый кориандр"><span>Молотый кориандр</span></label></li><li><label><input type="checkbox" data-k="kibsons|Чечевица консервированная — 1 банка 400 г"><span>Чечевица консервированная — 1 банка 400 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Белая фасоль консервированная — 1 банка"><span>Белая фасоль консервированная — 1 банка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рис жасмин — 500 г"><span>Рис жасмин — 500 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рис басмати — 500 г"><span>Рис басмати — 500 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Каперсы — маленькая банка"><span>Каперсы — маленькая банка</span></label></li></ul>
-<h3>noon — свежее по дням</h3><h4>Ср 30.09 — сейчас, к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Стейк сирлойн (или стриплойн) — 450 г"><span>Стейк сирлойн (или стриплойн) — 450 г</span></label></li><li><label><input type="checkbox" data-k="noon|Брокколи — 300 г"><span>Брокколи — 300 г</span></label></li><li><label><input type="checkbox" data-k="noon|Краснокочанная капуста — ½ небольшого кочана (≈200 г)"><span>Краснокочанная капуста — ½ небольшого кочана (≈200 г)</span></label></li><li><label><input type="checkbox" data-k="noon|Морковь — 2 шт."><span>Морковь — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="noon|Лайм — 3 шт."><span>Лайм — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="noon|Хлеб на закваске — небольшой батон (завтраки)"><span>Хлеб на закваске — небольшой батон (завтраки)</span></label></li></ul><h4>Чт 01.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Филе трески (или хаммур / сибас) — 500 г"><span>Филе трески (или хаммур / сибас) — 500 г</span></label></li></ul><h4>Пт 02.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Креветки сырые очищенные — 500 г"><span>Креветки сырые очищенные — 500 г</span></label></li></ul><h4>Пт 02.10 вечером или Сб 03.10 утром</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Куриное филе — 400 г"><span>Куриное филе — 400 г</span></label></li><li><label><input type="checkbox" data-k="noon|Хлеб на закваске или ржаной — небольшой батон"><span>Хлеб на закваске или ржаной — небольшой батон</span></label></li></ul><h4>Вс 04.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Бараний фарш — 450 г"><span>Бараний фарш — 450 г</span></label></li></ul>
-<h3>Проверить дома</h3><ul class="check"><li><label><input type="checkbox" data-k="home|Оливковое масло"><span>Оливковое масло</span></label></li><li><label><input type="checkbox" data-k="home|Соевый соус"><span>Соевый соус</span></label></li><li><label><input type="checkbox" data-k="home|Майонез"><span>Майонез</span></label></li><li><label><input type="checkbox" data-k="home|Горчица"><span>Горчица</span></label></li><li><label><input type="checkbox" data-k="home|Бальзамический уксус"><span>Бальзамический уксус</span></label></li><li><label><input type="checkbox" data-k="home|Томатная паста"><span>Томатная паста</span></label></li><li><label><input type="checkbox" data-k="home|Масло в спрее для аэрогриля"><span>Масло в спрее для аэрогриля</span></label></li></ul>
-<h3>Уже есть в запасах</h3><ul><li>Бурый рис — стейк, фиш-тако</li><li>Соус терияки — маринад стейка</li><li>Чёрная фасоль — фиш-тако</li><li>Кунжут, паприка, кумин, корица, орегано, чесночный и луковый порошок — маринады и специи</li><li>Грецкий орех — салат с инжиром</li><li>Тунец, сардины, печень трески — завтраки</li><li>Мёд — заправка и завтраки</li></ul>
-</div>
+<nav><a href="#dinners">Ужины</a><a href="#breakfasts">Завтраки</a><a href="#prep">Заготовки</a><a href="#shop">Покупки</a></nav>
 <h2 id="dinners">Ужины</h2><section class="day"><div class="dh"><h3>Ср 30.09</h3><span class="tag t-normal">Обычный вечер</span></div><p class="note">Сегодня без заготовок, на всё ≈50 минут, из них активно 15. Бурый рис (40 минут на плите) ставим первым — сразу на два ужина. Маринад — 3 ст. л. терияки из запасов вместо соевого с сахаром, 15 минут.</p><details class="recipe">
-<summary><img src="https://www.wellplated.com/wp-content/uploads/2024/05/Best-Air-Fryer-Steak-Bites-Recipe.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Стейк-кубики в соево-сладком маринаде с бурым рисом и брокколи</span><span class="meta">8 мин активно · белок ≈58 г · аэрогриль</span></summary>
+<summary><img src="https://www.wellplated.com/wp-content/uploads/2024/05/Best-Air-Fryer-Steak-Bites-Recipe.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Стейк-кубики в соево-сладком маринаде с бурым рисом и брокколи</span><span class="meta">⏱ 8 мин активно / 20 мин всего<br>🍳 Аэрогриль · белок ≈58 г</span></summary>
 <div class="body"><h4>Ингредиенты (на 2 порции)</h4>
 <p><strong>Стейк и маринад</strong></p>
 <ul>
@@ -108,7 +65,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Разобрать брокколи на соцветия, в контейнер.</li>
 </ul><p class="src"><a href="https://www.wellplated.com/air-fryer-steak-bites/" target="_blank">оригинал рецепта</a></p></div>
 </details></section><section class="day"><div class="dh"><h3>Чт 01.10</h3><span class="tag t-express">Экспресс</span></div><p class="note">Рис и слоу уже готовы со среды.</p><details class="recipe">
-<summary><img src="https://www.skinnytaste.com/wp-content/uploads/2022/09/Fish-Taco-Bowls-8.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Боул фиш-тако с треской, бурым рисом, чёрной фасолью и капустным слоу</span><span class="meta">8 мин активно · белок ≈55 г · аэрогриль</span></summary>
+<summary><img src="https://www.skinnytaste.com/wp-content/uploads/2022/09/Fish-Taco-Bowls-8.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Боул фиш-тако с треской, бурым рисом, чёрной фасолью и капустным слоу</span><span class="meta">⏱ 8 мин активно / 12 мин всего<br>🍳 Аэрогриль · белок ≈55 г</span></summary>
 <div class="body"><h4>Ингредиенты (на 2 порции)</h4>
 <p><strong>Рыба</strong></p>
 <ul>
@@ -153,7 +110,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Рыбу не заготавливаем: заказать свежую в noon в день ужина.</li>
 </ul><p class="src"><a href="https://www.skinnytaste.com/fish-taco-bowls/" target="_blank">оригинал рецепта</a></p></div>
 </details></section><section class="day"><div class="dh"><h3>Пт 02.10</h3><span class="tag t-normal">Обычный вечер</span></div><details class="recipe">
-<summary><img src="https://www.jaroflemons.com/wp-content/uploads/2023/09/Thai-Inspired-Coconut-Curry-Shrimp-2-1440x1800.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Тайское кокосовое карри с креветками (неострое)</span><span class="meta">12 мин активно · белок ≈52 г · аэрогриль, плита</span></summary>
+<summary><img src="https://www.jaroflemons.com/wp-content/uploads/2023/09/Thai-Inspired-Coconut-Curry-Shrimp-2-1440x1800.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Тайское кокосовое карри с креветками (неострое)</span><span class="meta">⏱ 12 мин активно / 20 мин всего<br>🍳 Аэрогриль, плита · белок ≈52 г</span></summary>
 <div class="body"><h4>Ингредиенты (на 2 порции)</h4>
 <p><strong>Креветки</strong></p>
 <ul>
@@ -199,7 +156,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Креветки в воскресенье не трогать: они свежие, заказать в noon в день ужина; заранее не мариновать; вечером обсушить.</li>
 </ul><p class="src"><a href="https://www.jaroflemons.com/thai-coconut-curry-shrimp/" target="_blank">оригинал рецепта</a></p></div>
 </details></section><section class="day"><div class="dh"><h3>Сб 03.10</h3><span class="tag t-normal">Обычный вечер</span></div><p class="note">Курицу замариновать утром. Кешью-пасты нет — в заправку 1 ч. л. мёда и ½ ч. л. горчицы.</p><details class="recipe">
-<summary><img src="https://www.jaroflemons.com/wp-content/uploads/2019/08/Fig-Goat-Cheese-Salad-5-1280x1800.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Салат с инжиром, козьим сыром и запечёнными яблоками, с курицей</span><span class="meta">10 мин активно · белок ≈50 г · аэрогриль</span></summary>
+<summary><img src="https://www.jaroflemons.com/wp-content/uploads/2019/08/Fig-Goat-Cheese-Salad-5-1280x1800.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Салат с инжиром, козьим сыром и запечёнными яблоками, с курицей</span><span class="meta">⏱ 10 мин активно / 20 мин всего<br>🍳 Аэрогриль · белок ≈50 г</span></summary>
 <div class="body"><h4>Ингредиенты (на 2 порции)</h4>
 <p><strong>Курица и маринад</strong></p>
 <ul>
@@ -245,7 +202,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Спаржу нарезать заранее можно (до 3 дней); яблоко и инжир — только в тот же вечер.</li>
 </ul><p class="src"><a href="https://www.jaroflemons.com/fig-goat-cheese-salad/" target="_blank">оригинал рецепта</a></p></div>
 </details></section><section class="day"><div class="dh"><h3>Вс 04.10</h3><span class="tag t-normal">Обычный вечер</span></div><p class="note">Вечером — заготовка на следующую неделю.</p><details class="recipe">
-<summary><img src="https://www.recipetineats.com/tachyon/2014/08/Middle-Eastern-Pilaf-3-1.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Ближневосточный плов с бараниной, чечевицей и шпинатом</span><span class="meta">20 мин активно · белок ≈55 г · плита</span></summary>
+<summary><img src="https://www.recipetineats.com/tachyon/2014/08/Middle-Eastern-Pilaf-3-1.jpg" alt="" referrerpolicy="no-referrer"><span class="rt">Ближневосточный плов с бараниной, чечевицей и шпинатом</span><span class="meta">⏱ 20 мин активно / 35 мин всего<br>🍳 Плита · белок ≈55 г</span></summary>
 <div class="body"><h4>Ингредиенты (на 2 порции)</h4>
 <p><strong>Плов</strong></p>
 <ul>
@@ -291,7 +248,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 </ul><p class="src"><a href="https://www.recipetineats.com/middle-eastern-lamb-lentil-rice-pilaf/" target="_blank">оригинал рецепта</a></p></div>
 </details></section>
 <h2 id="breakfasts">Завтраки</h2><div class="box"><details class="recipe">
-<summary><span class="ph">☀️</span><span class="rt">Тартин с тунцом, белой фасолью и лимоном</span><span class="meta">5 мин активно · белок ≈30 г · тостер или аэрогриль</span></summary>
+<summary><span class="ph">☀️</span><span class="rt">Тартин с тунцом, белой фасолью и лимоном</span><span class="meta">⏱ 5 мин активно<br>🍳 Тостер или аэрогриль · белок ≈30 г</span></summary>
 <div class="body"><h4>Ингредиенты (1 порция)</h4>
 <ul>
 <li>хлеб на закваске или ржаной — 1 большой ломоть</li>
@@ -309,7 +266,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Сверху тунец крупными хлопьями, лук, каперсы, цедра, перец.</li>
 </ol></div>
 </details><details class="recipe">
-<summary><span class="ph">☀️</span><span class="rt">Чиа-пудинг на греческом йогурте с ягодами</span><span class="meta">3 мин активно · белок ≈24 г · холодильник</span></summary>
+<summary><span class="ph">☀️</span><span class="rt">Чиа-пудинг на греческом йогурте с ягодами</span><span class="meta">⏱ 3 мин активно<br>🍳 Холодильник · белок ≈24 г</span></summary>
 <div class="body"><h4>Ингредиенты (1 порция)</h4>
 <ul>
 <li>греческий йогурт 2–5 % — 200 г</li>
@@ -333,7 +290,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Сверху ягоды, орехи, тонкая струйка мёда.</li>
 </ol></div>
 </details><details class="recipe">
-<summary><span class="ph">☀️</span><span class="rt">Тартин с сардинами, рикоттой и томатами</span><span class="meta">5 мин активно · белок ≈25 г · тостер или аэрогриль</span></summary>
+<summary><span class="ph">☀️</span><span class="rt">Тартин с сардинами, рикоттой и томатами</span><span class="meta">⏱ 5 мин активно<br>🍳 Тостер или аэрогриль · белок ≈25 г</span></summary>
 <div class="body"><h4>Ингредиенты (1 порция)</h4>
 <ul>
 <li>хлеб на закваске — 1 большой ломоть</li>
@@ -349,7 +306,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 <li>Сардины целиком или половинками, черри, капля масла из банки, лимон, перец.</li>
 </ol></div>
 </details><details class="recipe">
-<summary><span class="ph">☀️</span><span class="rt">Сырники в аэрогриле</span><span class="meta">12 мин активно · белок ≈36 г · аэрогриль</span></summary>
+<summary><span class="ph">☀️</span><span class="rt">Сырники в аэрогриле</span><span class="meta">⏱ 12 мин активно / 25 мин всего<br>🍳 Аэрогриль · белок ≈36 г</span></summary>
 <div class="body"><h4>Ингредиенты (1 порция, 4 небольших сырника)</h4>
 <ul>
 <li>творог 5 %, сухой, без жидкости — 180 г</li>
@@ -377,7 +334,7 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 </ol>
 <p>Вторую корзину можно занять, если сырники нужны на двоих. На следующий день их не оставляем, вчерашние заметно хуже.</p></div>
 </details><details class="recipe">
-<summary><span class="ph">☀️</span><span class="rt">Турецкие яйца (çılbır) на чесночном йогурте</span><span class="meta">10 мин активно · белок ≈27 г · плита</span></summary>
+<summary><span class="ph">☀️</span><span class="rt">Турецкие яйца (çılbır) на чесночном йогурте</span><span class="meta">⏱ 10 мин активно<br>🍳 Плита · белок ≈27 г</span></summary>
 <div class="body"><h4>Ингредиенты (1 порция)</h4>
 <ul>
 <li>греческий йогурт — 150 г, комнатной температуры</li>
@@ -400,6 +357,49 @@ button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:8px 
 </ol></div>
 </details></div>
 <h2 id="prep">Заготовки</h2><div class="box"><h4>Ср 30.09, пока варится рис</h4><ul><li>Сварить бурый рис 180 г сухого — 100 г сегодня, 80 г в четверг.</li><li>Нашинковать краснокочанную капусту и натереть морковь для слоу на четверг — в контейнер без заправки.</li></ul><h4>Чт 01.10, вечер</h4><ul><li>Чиа-пудинг на пятничное утро — 3 минуты, в банку и в холодильник.</li></ul><h4>Пт 02.10, до ужина</h4><ul><li>Нарезать лук, перец, брокколи для карри; натереть имбирь и чеснок.</li></ul><h4>Сб 03.10, утро</h4><ul><li>Замариновать курицу для салата с инжиром. Взбить заправку, вымыть руколу и кейл.</li></ul></div>
+<h2 id="shop">Список покупок</h2><div class="box shop">
+<div class="row"><button onclick="navigator.clipboard.writeText(document.getElementById('kib').value).then(()=>this.textContent='Скопировано')">Скопировать для Kibsons</button><button class="ghost" onclick="resetChecks()">Снять все галочки</button></div>
+<h3>Kibsons — раз на неделю</h3>
+<textarea id="kib" hidden>Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)
+Молоко — 1 л
+Творог 5 % — 200 г
+Ягоды (голубика или малина) — 1 упаковка
+Сливочное масло — если нет дома
+Рикотта — 250 г (тартин с сардинами)
+Козий сыр мягкий — 100 г
+Яйца — 10 шт.
+Лук репчатый — 3 шт.
+Красный лук — 1 шт.
+Чеснок — 1 головка
+Имбирь свежий — небольшой корень
+Брокколи — 200 г
+Перец болгарский красный — 1 шт.
+Шпинат — 200 г
+Руккола — 1 упаковка
+Кейл — 1 небольшая упаковка
+Спаржа — 1 пучок
+Томаты — 2 шт.
+Черри — 250 г
+Огурцы — 3 шт.
+Авокадо — 2 шт.
+Ананас — ¼ (или маленькая упаковка кусочками)
+Инжир — 3 шт.
+Яблоко — 1 шт.
+Лимоны — 3 шт.
+Петрушка — 1 пучок
+Кокосовое молоко — 1 банка 400 мл
+Красная паста карри — маленькая банка
+Мягкий порошок карри
+Молотый кориандр
+Чечевица консервированная — 1 банка 400 г
+Белая фасоль консервированная — 1 банка
+Рис жасмин — 500 г
+Рис басмати — 500 г
+Каперсы — маленькая банка</textarea><ul class="check"><li><label><input type="checkbox" data-k="kibsons|Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)"><span>Греческий йогурт — 1 кг (соусы, чиа-пудинг, чылбыр)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Молоко — 1 л"><span>Молоко — 1 л</span></label></li><li><label><input type="checkbox" data-k="kibsons|Творог 5 % — 200 г"><span>Творог 5 % — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Ягоды (голубика или малина) — 1 упаковка"><span>Ягоды (голубика или малина) — 1 упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Сливочное масло — если нет дома"><span>Сливочное масло — если нет дома</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рикотта — 250 г (тартин с сардинами)"><span>Рикотта — 250 г (тартин с сардинами)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Козий сыр мягкий — 100 г"><span>Козий сыр мягкий — 100 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Яйца — 10 шт."><span>Яйца — 10 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Лук репчатый — 3 шт."><span>Лук репчатый — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Красный лук — 1 шт."><span>Красный лук — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Чеснок — 1 головка"><span>Чеснок — 1 головка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Имбирь свежий — небольшой корень"><span>Имбирь свежий — небольшой корень</span></label></li><li><label><input type="checkbox" data-k="kibsons|Брокколи — 200 г"><span>Брокколи — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Перец болгарский красный — 1 шт."><span>Перец болгарский красный — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Шпинат — 200 г"><span>Шпинат — 200 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Руккола — 1 упаковка"><span>Руккола — 1 упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Кейл — 1 небольшая упаковка"><span>Кейл — 1 небольшая упаковка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Спаржа — 1 пучок"><span>Спаржа — 1 пучок</span></label></li><li><label><input type="checkbox" data-k="kibsons|Томаты — 2 шт."><span>Томаты — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Черри — 250 г"><span>Черри — 250 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Огурцы — 3 шт."><span>Огурцы — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Авокадо — 2 шт."><span>Авокадо — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Ананас — ¼ (или маленькая упаковка кусочками)"><span>Ананас — ¼ (или маленькая упаковка кусочками)</span></label></li><li><label><input type="checkbox" data-k="kibsons|Инжир — 3 шт."><span>Инжир — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Яблоко — 1 шт."><span>Яблоко — 1 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Лимоны — 3 шт."><span>Лимоны — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="kibsons|Петрушка — 1 пучок"><span>Петрушка — 1 пучок</span></label></li><li><label><input type="checkbox" data-k="kibsons|Кокосовое молоко — 1 банка 400 мл"><span>Кокосовое молоко — 1 банка 400 мл</span></label></li><li><label><input type="checkbox" data-k="kibsons|Красная паста карри — маленькая банка"><span>Красная паста карри — маленькая банка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Мягкий порошок карри"><span>Мягкий порошок карри</span></label></li><li><label><input type="checkbox" data-k="kibsons|Молотый кориандр"><span>Молотый кориандр</span></label></li><li><label><input type="checkbox" data-k="kibsons|Чечевица консервированная — 1 банка 400 г"><span>Чечевица консервированная — 1 банка 400 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Белая фасоль консервированная — 1 банка"><span>Белая фасоль консервированная — 1 банка</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рис жасмин — 500 г"><span>Рис жасмин — 500 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Рис басмати — 500 г"><span>Рис басмати — 500 г</span></label></li><li><label><input type="checkbox" data-k="kibsons|Каперсы — маленькая банка"><span>Каперсы — маленькая банка</span></label></li></ul>
+<h3>noon — свежее по дням</h3><h4>Ср 30.09 — сейчас, к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Стейк сирлойн (или стриплойн) — 450 г"><span>Стейк сирлойн (или стриплойн) — 450 г</span></label></li><li><label><input type="checkbox" data-k="noon|Брокколи — 300 г"><span>Брокколи — 300 г</span></label></li><li><label><input type="checkbox" data-k="noon|Краснокочанная капуста — ½ небольшого кочана (≈200 г)"><span>Краснокочанная капуста — ½ небольшого кочана (≈200 г)</span></label></li><li><label><input type="checkbox" data-k="noon|Морковь — 2 шт."><span>Морковь — 2 шт.</span></label></li><li><label><input type="checkbox" data-k="noon|Лайм — 3 шт."><span>Лайм — 3 шт.</span></label></li><li><label><input type="checkbox" data-k="noon|Хлеб на закваске — небольшой батон (завтраки)"><span>Хлеб на закваске — небольшой батон (завтраки)</span></label></li></ul><h4>Чт 01.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Филе трески (или хаммур / сибас) — 500 г"><span>Филе трески (или хаммур / сибас) — 500 г</span></label></li></ul><h4>Пт 02.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Креветки сырые очищенные — 500 г"><span>Креветки сырые очищенные — 500 г</span></label></li></ul><h4>Пт 02.10 вечером или Сб 03.10 утром</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Куриное филе — 400 г"><span>Куриное филе — 400 г</span></label></li><li><label><input type="checkbox" data-k="noon|Хлеб на закваске или ржаной — небольшой батон"><span>Хлеб на закваске или ржаной — небольшой батон</span></label></li></ul><h4>Вс 04.10 — к ужину</h4><ul class="check"><li><label><input type="checkbox" data-k="noon|Бараний фарш — 450 г"><span>Бараний фарш — 450 г</span></label></li></ul>
+<h3>Проверить дома</h3><ul class="check"><li><label><input type="checkbox" data-k="home|Оливковое масло"><span>Оливковое масло</span></label></li><li><label><input type="checkbox" data-k="home|Соевый соус"><span>Соевый соус</span></label></li><li><label><input type="checkbox" data-k="home|Майонез"><span>Майонез</span></label></li><li><label><input type="checkbox" data-k="home|Горчица"><span>Горчица</span></label></li><li><label><input type="checkbox" data-k="home|Бальзамический уксус"><span>Бальзамический уксус</span></label></li><li><label><input type="checkbox" data-k="home|Томатная паста"><span>Томатная паста</span></label></li><li><label><input type="checkbox" data-k="home|Масло в спрее для аэрогриля"><span>Масло в спрее для аэрогриля</span></label></li></ul>
+<h3>Уже есть в запасах</h3><ul><li>Бурый рис — стейк, фиш-тако</li><li>Соус терияки — маринад стейка</li><li>Чёрная фасоль — фиш-тако</li><li>Кунжут, паприка, кумин, корица, орегано, чесночный и луковый порошок — маринады и специи</li><li>Грецкий орех — салат с инжиром</li><li>Тунец, сардины, печень трески — завтраки</li><li>Мёд — заправка и завтраки</li></ul>
+</div>
 </main>
 <script>
 const KEY = "shop:" + document.title;
